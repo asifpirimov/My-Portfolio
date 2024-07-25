@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - <%= name %>'s Portfolio</title>
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h2>Who I Am</h2>
+            <p>Hello! I am <%= name %>, a Computer Engineeering student with a passion for web developing and developing new things for the world of science. I enjoy creating new different projects. In my free time, I love exploring new technologies, participating in cybersecurity challenges, and sharing my knowledge with others.</p>
+
+            <h2>My Journey</h2>
+            <p>I started my journey in the world of web at a young age, driven by a curiosity about how things work and a desire to make the digital world a better place. Over the years, I have honed my skills through various courses, certifications, and hands-on projects. My goal is to continue learning and growing in this field, contributing to the community and making a positive impact.</p>
+            
+            <h2>Interests and Hobbies</h2>
+            <p>When I'm not immersed in web developing, I enjoy watching films and series that delve into the dramas of students and teachers creating new things for the world of science. One of my favorite shows is 'Yaratılan,' which I found fascinating and inspiring. I also like to stay active by hiking and playing sports, and I often spend my weekends exploring new places and meeting new people.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <%= new Date().getFullYear() %> <%= name %>. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contact.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact <%= name %></h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>If you wish to get in touch, you can reach me through the following channels:</p>
+            <ul class="contact-list">
+                <li><strong>E-mail:</strong> <a href="mailto:xxxx">xxx</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/asifpirimov" target="_blank" rel="noopener noreferrer">asifpirimov</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/asif-pirimzade-43791b1aa/" target="_blank" rel="noopener noreferrer">Asif Pirimzade</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <%- include("footer.ejs") %>
+    </footer>
+</body>
+</html>

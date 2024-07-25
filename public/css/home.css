@@ -1,0 +1,188 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables for easy theme management */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --light-color: #f4f4f9;
+    --dark-color: #333;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --transition-time: 0.3s;
+}
+
+/* General Styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+    animation: fadeIn var(--transition-time) ease-in;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer is at the bottom of the viewport */
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color var(--transition-time), text-decoration var(--transition-time);
+}
+
+a:hover {
+    color: darken(var(--primary-color), 10%); /* Adjust color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+ul {
+    list-style: none;
+}
+
+/* Container for padding and alignment */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: var(--dark-color);
+    color: #fff;
+    padding: 2rem 0; /* Increased padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text within the header */
+    animation: slideDown var(--transition-time) ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header h5 {
+    font-size: 1.25rem; /* Adjusted font size */
+    color: #ddd; /* Light color for the subtitle */
+    margin-bottom: 1rem; /* Spacing between h5 and nav */
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background var(--transition-time);
+}
+
+nav ul li a:hover {
+    background: var(--secondary-color);
+}
+
+/* Main Content Styles */
+main {
+    flex: 1; /* Ensures the main content takes up the remaining space */
+    padding: 2rem 0;
+    animation: fadeIn var(--transition-time) ease-in;
+}
+
+.projects, .certificies {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects h2, .certificies h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.projects p, .certificies p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.projects a, .certificies a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: color var(--transition-time), transform var(--transition-time);
+}
+
+.projects a:hover, .certificies a:hover {
+    color: darken(var(--primary-color), 10%);
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background: var(--dark-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideUp var(--transition-time) ease-in-out;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    header .container {
+        text-align: center;
+    }
+
+    .projects, .certificies {
+        padding: 1rem;
+    }
+}

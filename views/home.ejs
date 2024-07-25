@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <title><%= title %></title>
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to <%= name %>'s Portfolio</h1>
+        <h5>Computer Engineer | Web Developer</h5>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="projects">
+            <h2>Featured Projects</h2>
+            
+            <a href="https://github.com/asifpirimov"><p>Visit to the my GitHub account to see my projects </p></h4></a>
+        </section>
+        <section class="certificies">
+            <h2>Featured Certificate</h2>
+            
+            <a href="https://www.coursera.org/account/accomplishments/verify/63JD8URN5ABL"><p>Click link to see my first certificate</p></a>
+        </section>
+    </main>
+    <footer>
+        <%- include("footer.ejs")%>
+    </footer>
+</body>
+</html>
